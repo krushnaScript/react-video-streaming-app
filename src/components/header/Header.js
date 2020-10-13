@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 const Header = ()=>{
@@ -12,8 +12,17 @@ const Header = ()=>{
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
                         </button>
-                        <div className="collapse navbar-collapse" style={{justifyContent:'flex-end'}} id="navbarNav">
+                        
+                        <div className="collapse navbar-collapse" style={{justifyContent:'space-between'}} id="navbarNav">
                             <ul className="navbar-nav">
+                                <li className="nav-item mr-2">
+                                    <NavLink activeClassName="h5" to='/series' className="nav-link ">Series</NavLink>
+                                </li>
+                                <li className="nav-item">
+                                    <NavLink activeClassName="h5" to='/movies' className="nav-link">Movies</NavLink>
+                                </li>
+                            </ul>
+                           <ul className="navbar-nav">
                                 <li className="nav-item mr-4">
                                     <Link to='/' className="nav-link ">Log In</Link>
                                 </li>

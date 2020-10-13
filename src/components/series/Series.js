@@ -42,7 +42,7 @@ const Series=()=>{
                                                 <div> 
                                                     <div className="card align-items-center">
                                                         <div className="view overlay">
-                                                            <img src={data["images"]["Poster Art"]["url"]} className="card-img-top" style={{height:280,maxWidth:250}} alt="Banner_Image"/>
+                                                            <img src={data["images"]["Poster Art"]["url"]} className="card-img-top" style={{height:250,maxWidth:200}} alt="Banner_Image"/>
                                                         </div>
                                                     </div>
                                                     <p className="mt-2">{data.title}</p>
